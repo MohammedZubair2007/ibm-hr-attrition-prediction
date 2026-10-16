@@ -42,7 +42,19 @@ Because the dataset contains substantially more employees who stayed than employ
 
 A classification threshold was tuned for Logistic Regression using out-of-fold predictions generated from the training data.
 
-<img width="1312" height="742" alt="image" src="https://github.com/user-attachments/assets/d894993b-7228-4d30-bfa5-88ecd1b77b51" />
+## Model Comparison Results
+
+The following results were obtained during experimentation on the held-out test set.
+
+| Model | Accuracy | Precision (Attrition) | Recall (Attrition) | F1-score (Attrition) | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Logistic Regression (threshold 0.50) | 75.17% | 34.88% | 63.83% | 45.11% | 80.32% |
+| Random Forest | 84.69% | 62.50% | 10.64% | 18.18% | 78.32% |
+| XGBoost | 86.73% | 78.57% | 23.40% | 36.07% | 79.73% |
+| Logistic Regression (tuned threshold 0.69) | 83.67% | 48.84% | 44.68% | 46.67% | Not recalculated |
+
+**Interpretation:** XGBoost achieved the highest accuracy and precision for the attrition class among these experiments. Logistic Regression with the tuned threshold achieved the highest attrition F1-score. Each model presents a different balance between precision and recall.
+
 
 
 ## Key Learning Outcomes
