@@ -42,6 +42,9 @@ Because the dataset contains substantially more employees who stayed than employ
 
 A classification threshold was tuned for Logistic Regression using out-of-fold predictions generated from the training data.
 
+<img width="1312" height="742" alt="image" src="https://github.com/user-attachments/assets/d894993b-7228-4d30-bfa5-88ecd1b77b51" />
+
+
 ## Key Learning Outcomes
 
 - Exploratory data analysis and feature preparation
@@ -74,3 +77,7 @@ A classification threshold was tuned for Logistic Regression using out-of-fold p
 ## Disclaimer
 
 This is an educational portfolio project. Its predictions are not intended to determine employment outcomes or replace human judgment.
+
+
+
+
